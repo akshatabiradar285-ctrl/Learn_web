@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body{
+            background: #f1f3f6;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #2874f0;
+            padding: 10px 20px;
+            color: white;
+        }
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .search-box input{
+            padding: 6px;
+            width: 500px;
+            border: none;
+            border-radius: 2px;
+        }
+        .nav-links a{
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .banner img{
+            width: 10%;
+            height: 10%;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .categories{
+            display: flex;
+            justify-content: space-around;
+            background: white;
+            padding: 10px 0;
+            margin: 10px 0;
+            flex-wrap: warp;
+        }
+        category{
+            font-weight: bold;
+            color: #333;
+            padding: 10px;
+        }
+        .products{
+            background: white;
+            margin: 10px;
+            padding: 20px;
+        }
+        .products h2{
+            margin-bottom: 15px;
+        }
+        .product-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            
+            
+        }
+        .product{
+            background: #f9f9f9;
+            padding: 10px;
+            width: 150px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .product img{
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+        }
+        .price{
+            color: green;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .footer{
+            background: #172337;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+   <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Flipkart</div>
+        <div class="search-box">
+            <input type="text" placeholder="Search for Products, Brands and More" >
+        </div>
+        <div class="nav-links">
+            <a href="#">Login</a>
+            <a href="#">Become a Seller</a>
+            <a href="#">More</a>
+            <a href="#">Cart</a>
+        </div>
+    </header> 
+    <!--Banner-->
+    <section class="banner">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdu4GARpY07z001Mx0OMTJJT16jPnHGRdw0Q&s", alt="code image",width: 50px,height:50px>
+    </section>
+    <!--Categories-->
+    <section class="categories">
+        <div class="categories">Mobiles</div>
+        <div class="categories">Fashion</div>
+        <div class="categories">Electronics</div>
+        <div class="categories">Home</div>
+        <div class="categories">Appliances</div>
+        <div class="categories">Travel</div>
+        <div class="categories">Beauty</div>
+    </section>
+    <!--Products-->
+    <section class="products">
+        <h2>Top Deals</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR6eK5EvLq3lrkTPNycX9g_DPF_4O0okUvmjq6Kt2Pc2p0hbb8p1Q_EIA1lWX2Kl0n9OPVv9bXXeJaBifSSGQDuAq3gw74qTjz1-NdQx3VnAA2M_6gdqBo4", alt="code image", width="200", height="200">
+                <p>Zara Jumpsuit</p>
+                <p class="price">₹ 2,220</p>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQSuw2ds30LwlwPUvi1MS39fNztRiN2Ioy-h_b9oOQ0dg99m7G4MNqmXYiVy98GwuWLUJYoxcIloCq_8CqpOP_0oxLXItsGCp7o4tDcfPjHMPUM4PVjdrXi", alt="code image", width="200", height="200">
+                <p>Chanel Chance Eau Splendide Edp</p>
+                <p class="price">₹ 11,950</p>
+            </div>
+        
+            <div class="product">
+                <img src="https://img.tatacliq.com/images/i28/658Wx734H/MP000000029270824_658Wx734H_202511211918051.jpeg", alt="code image", width="200", height="200">
+                <p>Black Golden Buckle Reversible Textured Belt</p>
+                <p class="price">₹ 1,79,313</p>
+            </div>
+            
+
+            <div class="product">
+                <img src="https://www.net-a-porter.com/variants/images/31840166392263171/in/w2000_q60.jpg", alt="code image", width="200", height="200">
+                <p>Opyum embellished patent-leather sandals</p>
+                <p class="price">₹ 1,51,158</p>
+            </div>
+            
+            <div class="product">
+                <img src="https://gemopticians.com/cdn/shop/files/CHRISTIANDIOR_40185F_12A0_55_3045_1000x.jpg?v=1768653470.jpg", alt="code image", width="200", height="200">
+                <p>Dior Iconic Sunglasses</p>
+                <p class="price">₹ 57,230</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/c4/59/90/c459909700a6419193428eb5847ff971.jpg", alt="code image", width="200", height="200">
+                <p> Prada Beauty</p>
+                <p class="price">₹ 17,130</p>
+            </div>
+            <div class="product">
+                <img src="https://image.hm.com/assets/hm/a7/c7/a7c774875963c964f61887751b894aac24169ae5.jpg?imwidth=786", alt="code image", width="200", height="200">
+                <p>Women's Earrings</p>
+                <p class="price">₹ 399</p>
+            </div>
+            <div class="product">
+                <img src="https://www.mytheresa.com/media/1094/1238/100/63/P00893178.jpg", alt="code image", width="200", height="200">
+                <p>Saint Laurent Hand Bag</p>
+                <p class="price">₹ 1,79,313</p>
+            </div>
+             <div class="product">
+                <img src="https://image.hm.com/assets/hm/8f/b6/8fb6e582ecc40a2073a017ad868acc72fa0a1cee.jpg", alt="code image", width="200", height="200">
+                <p>H&M Bow</p>
+                <p class="price">₹ 2,184</p>
+            </div>
+           <div class="product">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRAhYr9-Op5CJynscw6zDSyGfa-KK9-81lEU1JPRvPlLnQ8Y0a5OlsqT8Sj8UFdSZLUwpBxZvomm_r0CT7UqxF8CzJQHIzZ_EfHXOORtDKozQy57Xrf4-iotA", alt="code image", width="200", height="200">
+                <p>Gold-coloured Two-strand Necklace</p>
+                <p class="price">₹ 999</p>
+           </div>
+           <div class="product">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSv575piJGPvfirF3dZIPie6BcJocx-FYo4aUeQ6Ow3TGAlckmkTD--Ij6EynyGqegcPUlRw0zwat2VdRI0kTpVAycnBkK_", alt="code image", width="200", height="200">
+                <p>Anti-tarnish Bracelet</p>
+                <p class="price">₹ 399</p>
+           </div>
+           <div class="product">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSf7kLd3r87xUGG4gD_KeoSJYbP-YUqiSeYiHu385Zvh-j-5BfiePLdxDBPR2WlYTPfLJydxUMYeJYNP92vqJcnUdLVVeuXrXPVMDvYZVVvBKXgZiSw20TRbXM", alt="code image", width="200", height="200">
+                <p>Backstrap Pointed Toe Kitten Pumps</p>
+                <p class="price">₹ 999</p>
+           </div>
+           <div class="product">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRo7YhWnKYHvvt-F3_vXmitZq772E7Bf0iJ0OWrtU3S1tqHcM9_10vYNV8wJoUFNJTg2cV5MRzfjiJGdrf-6gudbTbhhbnPiV6PjvFwaDRFiwwz1l6J17yHNw", alt="code image", width="200", height="200">
+                <p>Michael Kors Runway Women Gold Watch</p>
+                <p class="price">₹ 18,495</p>
+           </div>
+            <div class="product">
+                <img src="https://img.tatacliq.com/images/i20//437Wx649H/MP000000023799169_437Wx649H_202409231055561.jpeg", alt="code image", width="200", height="200">
+                <p>Shoes</p>
+                <p class="price">₹ 3,998</p>
+           </div>
+           <div class="product">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSUBa8vNf0l_FOQ_4aONWWsRKr8d3GXYoFqVCsMpJ4rESxjizg9HAMUbprUIH2UQf9FUuQsvBhlwyuYQ-T2Uw8kcePyLR-4qqBLJmjS-iKyWr6LRazV5pgwEzND", alt="code image", width="200", height="200">
+                <p> Noise Canceling Headphones</p>
+                <p class="price">₹ 32,927</p>
+           </div>
+           <div class="product">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQzezkwT_r6RIDmAqE9S-j8Wy5B8yEgiiSkrr0a3aunc9izhmjocSfOypjTqsdWxxxsghUpH2T0XFH8RunsVcD3A63XxM9LkQ62k43dpd0nbmOCXI3ghDNK2A", alt="code image", width="200", height="200">
+                <p>Allen Solly Women's Embroidered Crop Top</p>
+                <p class="price">₹ 1,601</p>
+           </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+        <p>&copy;2026 Flipkart Colne. All right Reversible</p>
+    </footer>
+</body>
+</html>
